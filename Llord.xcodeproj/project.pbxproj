@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		088619341C8F793D00D1E4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619331C8F793D00D1E4CE /* AppDelegate.swift */; };
+		088619361C8F793D00D1E4CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619351C8F793D00D1E4CE /* MainViewController.swift */; };
+		088619391C8F793D00D1E4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088619371C8F793D00D1E4CE /* Main.storyboard */; };
+		0886193B1C8F793D00D1E4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0886193A1C8F793D00D1E4CE /* Assets.xcassets */; };
+		0886193E1C8F793D00D1E4CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0886193C1C8F793D00D1E4CE /* LaunchScreen.storyboard */; };
+		088619491C8F7A9500D1E4CE /* LlordProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619481C8F7A9500D1E4CE /* LlordProperty.swift */; };
+		0886194B1C8F7AA300D1E4CE /* LlordTenant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886194A1C8F7AA300D1E4CE /* LlordTenant.swift */; };
+		0886194D1C8F7AB800D1E4CE /* LlordTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886194C1C8F7AB800D1E4CE /* LlordTransaction.swift */; };
+		0886194F1C8F7AC900D1E4CE /* LlordPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886194E1C8F7AC900D1E4CE /* LlordPaymentRequest.swift */; };
+		088619521C8F7B0400D1E4CE /* LlordClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619511C8F7B0400D1E4CE /* LlordClient.swift */; };
+		088619541C8F7B3900D1E4CE /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088619531C8F7B3900D1E4CE /* Payment.storyboard */; };
+		088619561C8F7B6700D1E4CE /* Property.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088619551C8F7B6700D1E4CE /* Property.storyboard */; };
+		088619581C8F7B7400D1E4CE /* Tenant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088619571C8F7B7400D1E4CE /* Tenant.storyboard */; };
+		0886195A1C8F7B8A00D1E4CE /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088619591C8F7B8A00D1E4CE /* Graphs.storyboard */; };
+		0886195C1C8F7C0400D1E4CE /* Properties.json in Resources */ = {isa = PBXBuildFile; fileRef = 0886195B1C8F7C0400D1E4CE /* Properties.json */; };
+		0886195F1C8F7D2C00D1E4CE /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886195E1C8F7D2C00D1E4CE /* PropertyTableViewCell.swift */; };
+		088619611C8F7DB600D1E4CE /* PaymentRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619601C8F7DB600D1E4CE /* PaymentRequestTableViewCell.swift */; };
+		088619631C8F7DC800D1E4CE /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619621C8F7DC800D1E4CE /* TransactionTableViewCell.swift */; };
+		088619651C8F7DDF00D1E4CE /* TenantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619641C8F7DDF00D1E4CE /* TenantTableViewCell.swift */; };
+		088619681C8F7ED500D1E4CE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619671C8F7ED500D1E4CE /* LaunchViewController.swift */; };
+		0886196A1C8F7EF600D1E4CE /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619691C8F7EF600D1E4CE /* PaymentsViewController.swift */; };
+		0886196C1C8F7F0A00D1E4CE /* InvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886196B1C8F7F0A00D1E4CE /* InvoiceViewController.swift */; };
+		0886196E1C8F7F3B00D1E4CE /* ConfirmPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886196D1C8F7F3B00D1E4CE /* ConfirmPaymentViewController.swift */; };
+		088619701C8F7F5300D1E4CE /* ChooseAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886196F1C8F7F5300D1E4CE /* ChooseAccountViewController.swift */; };
+		088619721C8F7F6600D1E4CE /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619711C8F7F6600D1E4CE /* DoneViewController.swift */; };
+		088619751C8F7FED00D1E4CE /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619741C8F7FED00D1E4CE /* PropertiesViewController.swift */; };
+		088619771C8F800C00D1E4CE /* PropertyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619761C8F800C00D1E4CE /* PropertyDetailViewController.swift */; };
+		0886197A1C8F806100D1E4CE /* TenantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619791C8F806100D1E4CE /* TenantsViewController.swift */; };
+		0886197C1C8F806F00D1E4CE /* TenantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886197B1C8F806F00D1E4CE /* TenantDetailViewController.swift */; };
+		088619811C8F80B900D1E4CE /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619801C8F80B900D1E4CE /* GraphsViewController.swift */; };
+		088619ED1C91FB0200D1E4CE /* RealexRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088619EC1C91FB0200D1E4CE /* RealexRemote.swift */; };
+		08861A131C92CD9800D1E4CE /* property1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08861A121C92CD9800D1E4CE /* property1.jpg */; };
+		08861A151C92CDA500D1E4CE /* property2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08861A141C92CDA500D1E4CE /* property2.jpg */; };
+		08861A171C92CDB500D1E4CE /* tenant1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08861A161C92CDB500D1E4CE /* tenant1.jpg */; };
+		08861A191C92CDBD00D1E4CE /* tenant2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08861A181C92CDBD00D1E4CE /* tenant2.png */; };
+		08861A1B1C92CDC700D1E4CE /* tenant3.png in Resources */ = {isa = PBXBuildFile; fileRef = 08861A1A1C92CDC700D1E4CE /* tenant3.png */; };
+		08861A1D1C92CDD700D1E4CE /* tenant4.png in Resources */ = {isa = PBXBuildFile; fileRef = 08861A1C1C92CDD700D1E4CE /* tenant4.png */; };
+		08861A1F1C92CDE800D1E4CE /* Tenants.json in Resources */ = {isa = PBXBuildFile; fileRef = 08861A1E1C92CDE800D1E4CE /* Tenants.json */; };
+		08861A211C92D5C600D1E4CE /* property3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08861A201C92D5C600D1E4CE /* property3.jpg */; };
+		08861A231C92DA4900D1E4CE /* Transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 08861A221C92DA4900D1E4CE /* Transactions.json */; };
+		08861A251C92DCFD00D1E4CE /* Requests.json in Resources */ = {isa = PBXBuildFile; fileRef = 08861A241C92DCFD00D1E4CE /* Requests.json */; };
+		08861A271C92DEC700D1E4CE /* LlordColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08861A261C92DEC700D1E4CE /* LlordColors.swift */; };
+		08861A2A1C92F51300D1E4CE /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08861A291C92F51300D1E4CE /* Transaction.storyboard */; };
+		08861A2C1C92F52E00D1E4CE /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08861A2B1C92F52E00D1E4CE /* TransactionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		088619301C8F793D00D1E4CE /* Llord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Llord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		088619331C8F793D00D1E4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		088619351C8F793D00D1E4CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		088619381C8F793D00D1E4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0886193A1C8F793D00D1E4CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0886193D1C8F793D00D1E4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0886193F1C8F793D00D1E4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088619481C8F7A9500D1E4CE /* LlordProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlordProperty.swift; sourceTree = "<group>"; };
+		0886194A1C8F7AA300D1E4CE /* LlordTenant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlordTenant.swift; sourceTree = "<group>"; };
+		0886194C1C8F7AB800D1E4CE /* LlordTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlordTransaction.swift; sourceTree = "<group>"; };
+		0886194E1C8F7AC900D1E4CE /* LlordPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlordPaymentRequest.swift; sourceTree = "<group>"; };
+		088619511C8F7B0400D1E4CE /* LlordClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlordClient.swift; sourceTree = "<group>"; };
+		088619531C8F7B3900D1E4CE /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		088619551C8F7B6700D1E4CE /* Property.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Property.storyboard; sourceTree = "<group>"; };
+		088619571C8F7B7400D1E4CE /* Tenant.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tenant.storyboard; sourceTree = "<group>"; };
+		088619591C8F7B8A00D1E4CE /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graphs.storyboard; sourceTree = "<group>"; };
+		0886195B1C8F7C0400D1E4CE /* Properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Properties.json; sourceTree = "<group>"; };
+		0886195E1C8F7D2C00D1E4CE /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		088619601C8F7DB600D1E4CE /* PaymentRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRequestTableViewCell.swift; sourceTree = "<group>"; };
+		088619621C8F7DC800D1E4CE /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		088619641C8F7DDF00D1E4CE /* TenantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenantTableViewCell.swift; sourceTree = "<group>"; };
+		088619671C8F7ED500D1E4CE /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		088619691C8F7EF600D1E4CE /* PaymentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		0886196B1C8F7F0A00D1E4CE /* InvoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceViewController.swift; sourceTree = "<group>"; };
+		0886196D1C8F7F3B00D1E4CE /* ConfirmPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPaymentViewController.swift; sourceTree = "<group>"; };
+		0886196F1C8F7F5300D1E4CE /* ChooseAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccountViewController.swift; sourceTree = "<group>"; };
+		088619711C8F7F6600D1E4CE /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		088619741C8F7FED00D1E4CE /* PropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesViewController.swift; sourceTree = "<group>"; };
+		088619761C8F800C00D1E4CE /* PropertyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewController.swift; sourceTree = "<group>"; };
+		088619791C8F806100D1E4CE /* TenantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenantsViewController.swift; sourceTree = "<group>"; };
+		0886197B1C8F806F00D1E4CE /* TenantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenantDetailViewController.swift; sourceTree = "<group>"; };
+		088619801C8F80B900D1E4CE /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
+		088619EC1C91FB0200D1E4CE /* RealexRemote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealexRemote.swift; sourceTree = "<group>"; };
+		08861A121C92CD9800D1E4CE /* property1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = property1.jpg; sourceTree = "<group>"; };
+		08861A141C92CDA500D1E4CE /* property2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = property2.jpg; sourceTree = "<group>"; };
+		08861A161C92CDB500D1E4CE /* tenant1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tenant1.jpg; sourceTree = "<group>"; };
+		08861A181C92CDBD00D1E4CE /* tenant2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenant2.png; sourceTree = "<group>"; };
+		08861A1A1C92CDC700D1E4CE /* tenant3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenant3.png; sourceTree = "<group>"; };
+		08861A1C1C92CDD700D1E4CE /* tenant4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenant4.png; sourceTree = "<group>"; };
+		08861A1E1C92CDE800D1E4CE /* Tenants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tenants.json; sourceTree = "<group>"; };
+		08861A201C92D5C600D1E4CE /* property3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = property3.jpg; sourceTree = "<group>"; };
+		08861A221C92DA4900D1E4CE /* Transactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Transactions.json; sourceTree = "<group>"; };
+		08861A241C92DCFD00D1E4CE /* Requests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Requests.json; sourceTree = "<group>"; };
+		08861A261C92DEC700D1E4CE /* LlordColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlordColors.swift; sourceTree = "<group>"; };
+		08861A291C92F51300D1E4CE /* Transaction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
+		08861A2B1C92F52E00D1E4CE /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0886192D1C8F793D00D1E4CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088619271C8F793D00D1E4CE = {
+			isa = PBXGroup;
+			children = (
+				088619321C8F793D00D1E4CE /* Llord */,
+				088619311C8F793D00D1E4CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		088619311C8F793D00D1E4CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				088619301C8F793D00D1E4CE /* Llord.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		088619321C8F793D00D1E4CE /* Llord */ = {
+			isa = PBXGroup;
+			children = (
+				088619451C8F79EA00D1E4CE /* MainViewControllers */,
+				088619661C8F7EB300D1E4CE /* PaymentViewControllers */,
+				08861A281C92F4EE00D1E4CE /* TransactionViewControllers */,
+				088619731C8F7FCC00D1E4CE /* PropertyViewControllers */,
+				088619781C8F802D00D1E4CE /* TenantViewControllers */,
+				0886197F1C8F809200D1E4CE /* GraphsViewControllers */,
+				088619471C8F7A6600D1E4CE /* Views */,
+				088619461C8F79FB00D1E4CE /* Models */,
+				088619331C8F793D00D1E4CE /* AppDelegate.swift */,
+				0886193A1C8F793D00D1E4CE /* Assets.xcassets */,
+				0886193C1C8F793D00D1E4CE /* LaunchScreen.storyboard */,
+				0886193F1C8F793D00D1E4CE /* Info.plist */,
+				0886195D1C8F7C0900D1E4CE /* Supporting Files */,
+			);
+			path = Llord;
+			sourceTree = "<group>";
+		};
+		088619451C8F79EA00D1E4CE /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				088619371C8F793D00D1E4CE /* Main.storyboard */,
+				088619351C8F793D00D1E4CE /* MainViewController.swift */,
+				088619671C8F7ED500D1E4CE /* LaunchViewController.swift */,
+			);
+			name = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		088619461C8F79FB00D1E4CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				088619EB1C91FB0200D1E4CE /* RealexRemote */,
+				088619501C8F7ADE00D1E4CE /* LlordInterfaceObjects */,
+				088619821C8F827900D1E4CE /* API */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		088619471C8F7A6600D1E4CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0886195E1C8F7D2C00D1E4CE /* PropertyTableViewCell.swift */,
+				088619601C8F7DB600D1E4CE /* PaymentRequestTableViewCell.swift */,
+				088619621C8F7DC800D1E4CE /* TransactionTableViewCell.swift */,
+				088619641C8F7DDF00D1E4CE /* TenantTableViewCell.swift */,
+				08861A261C92DEC700D1E4CE /* LlordColors.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		088619501C8F7ADE00D1E4CE /* LlordInterfaceObjects */ = {
+			isa = PBXGroup;
+			children = (
+				088619481C8F7A9500D1E4CE /* LlordProperty.swift */,
+				0886194A1C8F7AA300D1E4CE /* LlordTenant.swift */,
+				0886194C1C8F7AB800D1E4CE /* LlordTransaction.swift */,
+				0886194E1C8F7AC900D1E4CE /* LlordPaymentRequest.swift */,
+			);
+			name = LlordInterfaceObjects;
+			sourceTree = "<group>";
+		};
+		0886195D1C8F7C0900D1E4CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0886195B1C8F7C0400D1E4CE /* Properties.json */,
+				08861A1E1C92CDE800D1E4CE /* Tenants.json */,
+				08861A221C92DA4900D1E4CE /* Transactions.json */,
+				08861A241C92DCFD00D1E4CE /* Requests.json */,
+				08861A121C92CD9800D1E4CE /* property1.jpg */,
+				08861A141C92CDA500D1E4CE /* property2.jpg */,
+				08861A201C92D5C600D1E4CE /* property3.jpg */,
+				08861A161C92CDB500D1E4CE /* tenant1.jpg */,
+				08861A181C92CDBD00D1E4CE /* tenant2.png */,
+				08861A1A1C92CDC700D1E4CE /* tenant3.png */,
+				08861A1C1C92CDD700D1E4CE /* tenant4.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		088619661C8F7EB300D1E4CE /* PaymentViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				088619531C8F7B3900D1E4CE /* Payment.storyboard */,
+				088619691C8F7EF600D1E4CE /* PaymentsViewController.swift */,
+				0886196B1C8F7F0A00D1E4CE /* InvoiceViewController.swift */,
+				0886196D1C8F7F3B00D1E4CE /* ConfirmPaymentViewController.swift */,
+				0886196F1C8F7F5300D1E4CE /* ChooseAccountViewController.swift */,
+				088619711C8F7F6600D1E4CE /* DoneViewController.swift */,
+			);
+			name = PaymentViewControllers;
+			sourceTree = "<group>";
+		};
+		088619731C8F7FCC00D1E4CE /* PropertyViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				088619551C8F7B6700D1E4CE /* Property.storyboard */,
+				088619741C8F7FED00D1E4CE /* PropertiesViewController.swift */,
+				088619761C8F800C00D1E4CE /* PropertyDetailViewController.swift */,
+			);
+			name = PropertyViewControllers;
+			sourceTree = "<group>";
+		};
+		088619781C8F802D00D1E4CE /* TenantViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				088619571C8F7B7400D1E4CE /* Tenant.storyboard */,
+				088619791C8F806100D1E4CE /* TenantsViewController.swift */,
+				0886197B1C8F806F00D1E4CE /* TenantDetailViewController.swift */,
+			);
+			name = TenantViewControllers;
+			sourceTree = "<group>";
+		};
+		0886197F1C8F809200D1E4CE /* GraphsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				088619591C8F7B8A00D1E4CE /* Graphs.storyboard */,
+				088619801C8F80B900D1E4CE /* GraphsViewController.swift */,
+			);
+			name = GraphsViewControllers;
+			sourceTree = "<group>";
+		};
+		088619821C8F827900D1E4CE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				088619511C8F7B0400D1E4CE /* LlordClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		088619EB1C91FB0200D1E4CE /* RealexRemote */ = {
+			isa = PBXGroup;
+			children = (
+				088619EC1C91FB0200D1E4CE /* RealexRemote.swift */,
+			);
+			path = RealexRemote;
+			sourceTree = "<group>";
+		};
+		08861A281C92F4EE00D1E4CE /* TransactionViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				08861A291C92F51300D1E4CE /* Transaction.storyboard */,
+				08861A2B1C92F52E00D1E4CE /* TransactionViewController.swift */,
+			);
+			name = TransactionViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0886192F1C8F793D00D1E4CE /* Llord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088619421C8F793D00D1E4CE /* Build configuration list for PBXNativeTarget "Llord" */;
+			buildPhases = (
+				0886192C1C8F793D00D1E4CE /* Sources */,
+				0886192D1C8F793D00D1E4CE /* Frameworks */,
+				0886192E1C8F793D00D1E4CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Llord;
+			productName = Llord;
+			productReference = 088619301C8F793D00D1E4CE /* Llord.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		088619281C8F793D00D1E4CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Quynh;
+				TargetAttributes = {
+					0886192F1C8F793D00D1E4CE = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = R94F524VGS;
+					};
+				};
+			};
+			buildConfigurationList = 0886192B1C8F793D00D1E4CE /* Build configuration list for PBXProject "Llord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 088619271C8F793D00D1E4CE;
+			productRefGroup = 088619311C8F793D00D1E4CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0886192F1C8F793D00D1E4CE /* Llord */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0886192E1C8F793D00D1E4CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08861A2A1C92F51300D1E4CE /* Transaction.storyboard in Resources */,
+				088619581C8F7B7400D1E4CE /* Tenant.storyboard in Resources */,
+				0886193E1C8F793D00D1E4CE /* LaunchScreen.storyboard in Resources */,
+				08861A171C92CDB500D1E4CE /* tenant1.jpg in Resources */,
+				08861A131C92CD9800D1E4CE /* property1.jpg in Resources */,
+				08861A211C92D5C600D1E4CE /* property3.jpg in Resources */,
+				08861A1F1C92CDE800D1E4CE /* Tenants.json in Resources */,
+				08861A151C92CDA500D1E4CE /* property2.jpg in Resources */,
+				0886195A1C8F7B8A00D1E4CE /* Graphs.storyboard in Resources */,
+				08861A1B1C92CDC700D1E4CE /* tenant3.png in Resources */,
+				08861A191C92CDBD00D1E4CE /* tenant2.png in Resources */,
+				08861A1D1C92CDD700D1E4CE /* tenant4.png in Resources */,
+				08861A231C92DA4900D1E4CE /* Transactions.json in Resources */,
+				088619561C8F7B6700D1E4CE /* Property.storyboard in Resources */,
+				08861A251C92DCFD00D1E4CE /* Requests.json in Resources */,
+				0886195C1C8F7C0400D1E4CE /* Properties.json in Resources */,
+				0886193B1C8F793D00D1E4CE /* Assets.xcassets in Resources */,
+				088619391C8F793D00D1E4CE /* Main.storyboard in Resources */,
+				088619541C8F7B3900D1E4CE /* Payment.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0886192C1C8F793D00D1E4CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088619651C8F7DDF00D1E4CE /* TenantTableViewCell.swift in Sources */,
+				088619361C8F793D00D1E4CE /* MainViewController.swift in Sources */,
+				0886196A1C8F7EF600D1E4CE /* PaymentsViewController.swift in Sources */,
+				08861A271C92DEC700D1E4CE /* LlordColors.swift in Sources */,
+				088619521C8F7B0400D1E4CE /* LlordClient.swift in Sources */,
+				088619631C8F7DC800D1E4CE /* TransactionTableViewCell.swift in Sources */,
+				088619811C8F80B900D1E4CE /* GraphsViewController.swift in Sources */,
+				088619491C8F7A9500D1E4CE /* LlordProperty.swift in Sources */,
+				088619771C8F800C00D1E4CE /* PropertyDetailViewController.swift in Sources */,
+				0886197C1C8F806F00D1E4CE /* TenantDetailViewController.swift in Sources */,
+				0886196E1C8F7F3B00D1E4CE /* ConfirmPaymentViewController.swift in Sources */,
+				088619341C8F793D00D1E4CE /* AppDelegate.swift in Sources */,
+				0886194B1C8F7AA300D1E4CE /* LlordTenant.swift in Sources */,
+				0886196C1C8F7F0A00D1E4CE /* InvoiceViewController.swift in Sources */,
+				088619ED1C91FB0200D1E4CE /* RealexRemote.swift in Sources */,
+				088619681C8F7ED500D1E4CE /* LaunchViewController.swift in Sources */,
+				088619701C8F7F5300D1E4CE /* ChooseAccountViewController.swift in Sources */,
+				0886194F1C8F7AC900D1E4CE /* LlordPaymentRequest.swift in Sources */,
+				0886195F1C8F7D2C00D1E4CE /* PropertyTableViewCell.swift in Sources */,
+				088619611C8F7DB600D1E4CE /* PaymentRequestTableViewCell.swift in Sources */,
+				08861A2C1C92F52E00D1E4CE /* TransactionViewController.swift in Sources */,
+				0886194D1C8F7AB800D1E4CE /* LlordTransaction.swift in Sources */,
+				088619721C8F7F6600D1E4CE /* DoneViewController.swift in Sources */,
+				0886197A1C8F806100D1E4CE /* TenantsViewController.swift in Sources */,
+				088619751C8F7FED00D1E4CE /* PropertiesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		088619371C8F793D00D1E4CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				088619381C8F793D00D1E4CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0886193C1C8F793D00D1E4CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0886193D1C8F793D00D1E4CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		088619401C8F793D00D1E4CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		088619411C8F793D00D1E4CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		088619431C8F793D00D1E4CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Llord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Llord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		088619441C8F793D00D1E4CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Llord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Llord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0886192B1C8F793D00D1E4CE /* Build configuration list for PBXProject "Llord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088619401C8F793D00D1E4CE /* Debug */,
+				088619411C8F793D00D1E4CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		088619421C8F793D00D1E4CE /* Build configuration list for PBXNativeTarget "Llord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088619431C8F793D00D1E4CE /* Debug */,
+				088619441C8F793D00D1E4CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 088619281C8F793D00D1E4CE /* Project object */;
+}

@@ -1,0 +1,28 @@
+{
+    "requests" : [
+                 {
+                 "id" : "1",
+                 "amount" : "320.00",
+                 "address" : "18 UI-UX Street, SW3 2KP",
+                 "tenantName" : "Saci Sebo"
+                 },
+                  {
+                  "id" : "2",
+                  "amount" : "21.50",
+                  "address" : "18 UI-UX Street, SW3 2KP",
+                  "tenantName" : "Quynh Tran"
+                  },
+                  {
+                  "id" : "3",
+                  "amount" : "154.99",
+                  "address" : "18 UI-UX Street, SW3 2KP",
+                  "tenantName" : "James Butler"
+                  },
+                  {
+                  "id" : "4",
+                  "amount" : "100.00",
+                  "address" : "18 UI-UX Street, SW3 2KP",
+                  "tenantName" : "Jaime Clinton"
+                  }
+                 ]
+}

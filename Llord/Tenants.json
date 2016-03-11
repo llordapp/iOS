@@ -1,0 +1,29 @@
+{
+    "tenants" : [
+                {
+                "id" : "1",
+                "imageName" : "tenant1",
+                "address" : "18 UI-UX Street, SW3 2KP",
+                "tenantName" : "Saci Sebo"
+                },
+                {
+                "id" : "2",
+                 "imageName" : "tenant2",
+                 "address" : "125 iOS Road, E2 20G",
+                 "tenantName" : "Quynh Tran"
+                 },
+                 {
+                 "id" : "3",
+                 "imageName" : "tenant3",
+                 "address" : "30 Backend High Road, E11 H48",
+                 "tenantName" : "Jaime Clinton"
+                 },
+                 {
+                 "id" : "4",
+                 "imageName" : "tenant4",
+                 "address" : "81 IT Architecture Mew, S0 2KR",
+                 "tenantName" : "James Butler"
+                 }
+                 
+                ]
+}
