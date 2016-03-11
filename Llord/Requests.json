@@ -4,25 +4,29 @@
                  "id" : "1",
                  "amount" : "320.00",
                  "address" : "18 UI-UX Street, SW3 2KP",
-                 "tenantName" : "Saci Sebo"
+                 "tenantName" : "Saci Sebo",
+                 "item" : "Washing Machine"
                  },
                   {
                   "id" : "2",
                   "amount" : "21.50",
                   "address" : "18 UI-UX Street, SW3 2KP",
-                  "tenantName" : "Quynh Tran"
+                  "tenantName" : "Quynh Tran",
+                  "item" : "Plumber"
                   },
                   {
                   "id" : "3",
                   "amount" : "154.99",
                   "address" : "18 UI-UX Street, SW3 2KP",
-                  "tenantName" : "James Butler"
+                  "tenantName" : "James Butler",
+                  "item" : "Renovation"
                   },
                   {
                   "id" : "4",
                   "amount" : "100.00",
                   "address" : "18 UI-UX Street, SW3 2KP",
-                  "tenantName" : "Jaime Clinton"
+                  "tenantName" : "Jaime Clinton",
+                  "item" : "Hair dryer"
                   }
                  ]
 }

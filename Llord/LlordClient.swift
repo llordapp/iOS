@@ -9,6 +9,17 @@
 import Foundation
 class LlordClient: NSObject {
     
+    func postInvoice() {
+        
+        
+        
+    }
+    
+    
+    func getInvoiceData() {
+        
+        
+    }
     
     
     

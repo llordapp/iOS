@@ -14,12 +14,14 @@ class Request {
     var amount : String?
     var address : String?
     var tenantName : String?
+    var item : String?
     
     init(dictionary:NSDictionary) {
         id = dictionary["id"] as? String
         amount = dictionary["amount"] as? String
         address = dictionary["address"] as? String
         tenantName = dictionary["tenantName"] as? String
+        item = dictionary["item"] as? String
     }
     
     class func loadPaymentRequestsFromFile(path: String) -> [Request] {
