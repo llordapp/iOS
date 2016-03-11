@@ -33,4 +33,3 @@ let lightGrey = UIColor(red: 61/255, green: 73/255, blue: 101/255, alpha: 1)
 let darkBlue = UIColor(red: 27/255, green: 35/255, blue: 50/255, alpha: 1)
 
 let purple = UIColor(red: 38/255, green: 30/255, blue: 40/255, alpha: 1)
-
