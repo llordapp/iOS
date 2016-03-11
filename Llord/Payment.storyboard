@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,6 +27,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Vn-kb-4tz" id="dhG-5a-1Ue">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="105.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qX-4B-7cx">
@@ -44,8 +46,7 @@
                                                                     <exclude reference="TBW-sT-c1H"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="23" y="0.0" width="80" height="85"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="TBW-sT-c1H"/>
                                                                 </mask>
@@ -64,8 +65,7 @@
                                                                     <exclude reference="DlF-de-R1Z"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="136" y="18" width="204" height="21"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="DlF-de-R1Z"/>
                                                                 </mask>
@@ -84,8 +84,7 @@
                                                                     <exclude reference="p77-br-OJk"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="136" y="47" width="204" height="21"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="p77-br-OJk"/>
                                                                 </mask>
@@ -111,17 +110,16 @@
                                                         </mask>
                                                         <mask key="constraints">
                                                             <exclude reference="399-MS-gKo"/>
+                                                            <exclude reference="8h8-WI-sa5"/>
+                                                            <exclude reference="HIU-rl-KuJ"/>
                                                             <exclude reference="67k-GM-76h"/>
                                                             <exclude reference="C74-1c-YXw"/>
                                                             <exclude reference="m4P-gH-YjV"/>
-                                                            <exclude reference="8h8-WI-sa5"/>
-                                                            <exclude reference="HIU-rl-KuJ"/>
                                                             <exclude reference="Vb6-CN-CUH"/>
                                                             <exclude reference="bU0-34-Kyv"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="20" y="10" width="361" height="85"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="subviews">
                                                             <include reference="DPp-tL-RgD"/>
                                                             <include reference="0u6-Rf-Npd"/>
@@ -129,11 +127,11 @@
                                                         </mask>
                                                         <mask key="constraints">
                                                             <include reference="399-MS-gKo"/>
+                                                            <include reference="8h8-WI-sa5"/>
+                                                            <include reference="HIU-rl-KuJ"/>
                                                             <include reference="67k-GM-76h"/>
                                                             <include reference="C74-1c-YXw"/>
                                                             <include reference="m4P-gH-YjV"/>
-                                                            <include reference="8h8-WI-sa5"/>
-                                                            <include reference="HIU-rl-KuJ"/>
                                                             <include reference="Vb6-CN-CUH"/>
                                                             <include reference="bU0-34-Kyv"/>
                                                         </mask>
@@ -175,9 +173,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="60" width="400" height="540"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="aUD-v9-tGA" id="tAt-88-syM"/>
                                     <outlet property="delegate" destination="aUD-v9-tGA" id="3Y1-h2-A6a"/>
@@ -196,10 +191,10 @@
                                 <exclude reference="g1e-1v-ael"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="tkv-X7-Fgi"/>
                                 <exclude reference="3e3-1a-g8U"/>
                                 <exclude reference="4pw-MB-T2x"/>
                                 <exclude reference="nwx-jF-whc"/>
-                                <exclude reference="tkv-X7-Fgi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -207,10 +202,10 @@
                                 <include reference="g1e-1v-ael"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="tkv-X7-Fgi"/>
                                 <include reference="3e3-1a-g8U"/>
                                 <include reference="4pw-MB-T2x"/>
                                 <include reference="nwx-jF-whc"/>
-                                <include reference="tkv-X7-Fgi"/>
                             </mask>
                         </variation>
                     </view>
@@ -232,27 +227,37 @@
                         <viewControllerLayoutGuide type="bottom" id="4Sm-LA-WOc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z0m-aM-gNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWy-x6-1d8">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="189" y="219" width="39" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="CfR-RW-uzj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="55" y="87" width="290" height="420"/>
                                 </variation>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.11764705882352941" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CfR-RW-uzj" firstAttribute="top" secondItem="K9N-y7-8AN" secondAttribute="bottom" constant="67" id="kqE-cQ-JIR"/>
+                            <constraint firstItem="CfR-RW-uzj" firstAttribute="centerX" secondItem="z0m-aM-gNZ" secondAttribute="centerX" id="vlB-tR-2Nw"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="BWy-x6-1d8"/>
+                                <exclude reference="CfR-RW-uzj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="kqE-cQ-JIR"/>
+                                <exclude reference="vlB-tR-2Nw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="BWy-x6-1d8"/>
+                                <include reference="CfR-RW-uzj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="kqE-cQ-JIR"/>
+                                <include reference="vlB-tR-2Nw"/>
                             </mask>
                         </variation>
                     </view>
@@ -280,4 +285,7 @@
             <point key="canvasLocation" x="343.5" y="360"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="480" height="480"/>
+    </resources>
 </document>
