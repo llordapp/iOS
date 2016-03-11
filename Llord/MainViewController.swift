@@ -52,6 +52,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func didPushPayments(sender: AnyObject) {
+        
+        let storyboard = UIStoryboard(name: "Payment", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("PaymentRequestsVC") as! PaymentsViewController
+        
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func didPushProperties(sender: AnyObject) {
