@@ -39,6 +39,9 @@
                                         <include reference="mj5-AL-Sno"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="didPushNotifications:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzo-hZ-R6y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npu-Uu-VIE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -61,6 +64,9 @@
                                         <include reference="GC9-AF-62m"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="didPushPayments:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCf-yv-Khn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acE-tf-5YK">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -83,6 +89,9 @@
                                         <include reference="F27-7N-6D0"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="didPushProperties:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xKj-52-WyE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0X-Y3-fd7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -105,6 +114,9 @@
                                         <include reference="CMo-QW-BZ3"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="didPushTenants:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHx-Zq-bbx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF1-af-Sgp">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -127,6 +139,9 @@
                                         <include reference="aLM-6w-1tP"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="didPushTransaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwZ-qP-h4T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFI-QP-0cs">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -149,6 +164,9 @@
                                         <include reference="uvH-Yr-TNV"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="didPushOverview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hyi-es-PYa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tds-na-Egu">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -409,7 +427,7 @@
                         <outlet property="overviewButton" destination="ZFI-QP-0cs" id="dMX-hQ-w4o"/>
                         <outlet property="paymentsButton" destination="npu-Uu-VIE" id="Ab1-OG-ONL"/>
                         <outlet property="propertiesButton" destination="acE-tf-5YK" id="YgO-Ts-fL9"/>
-                        <outlet property="tenantsButton" destination="H0X-Y3-fd7" id="Kzx-pR-m3W"/>
+                        <outlet property="tenantsButton" destination="H0X-Y3-fd7" id="uOH-6Z-485"/>
                         <outlet property="transactionsButton" destination="AF1-af-Sgp" id="4b6-q0-EDy"/>
                     </connections>
                 </viewController>

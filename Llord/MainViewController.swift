@@ -47,7 +47,24 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func didPushNotifications(sender: AnyObject) {
+    }
+    
+    @IBAction func didPushPayments(sender: AnyObject) {
+    }
+    
+    @IBAction func didPushProperties(sender: AnyObject) {
+    }
+ 
+    @IBAction func didPushTenants(sender: AnyObject) {
+    }
+    
+    @IBAction func didPushTransaction(sender: AnyObject) {
+    }
+    
+    @IBAction func didPushOverview(sender: AnyObject) {
+    }
+    
 }
 
