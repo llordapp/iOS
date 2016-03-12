@@ -51,6 +51,11 @@
 		08861A271C92DEC700D1E4CE /* LlordColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08861A261C92DEC700D1E4CE /* LlordColors.swift */; };
 		08861A2A1C92F51300D1E4CE /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08861A291C92F51300D1E4CE /* Transaction.storyboard */; };
 		08861A2C1C92F52E00D1E4CE /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08861A2B1C92F52E00D1E4CE /* TransactionViewController.swift */; };
+		1E23D9AF1C944BD800A3889D /* card1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E23D9AB1C944BD800A3889D /* card1.png */; };
+		1E23D9B01C944BD800A3889D /* card2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E23D9AC1C944BD800A3889D /* card2.png */; };
+		1E23D9B11C944BD800A3889D /* card3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E23D9AD1C944BD800A3889D /* card3.png */; };
+		1E23D9B21C944BD800A3889D /* card4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E23D9AE1C944BD800A3889D /* card4.png */; };
+		1E23D9B41C944BE400A3889D /* invoice.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E23D9B31C944BE400A3889D /* invoice.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +105,11 @@
 		08861A261C92DEC700D1E4CE /* LlordColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlordColors.swift; sourceTree = "<group>"; };
 		08861A291C92F51300D1E4CE /* Transaction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 		08861A2B1C92F52E00D1E4CE /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		1E23D9AB1C944BD800A3889D /* card1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card1.png; sourceTree = "<group>"; };
+		1E23D9AC1C944BD800A3889D /* card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card2.png; sourceTree = "<group>"; };
+		1E23D9AD1C944BD800A3889D /* card3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card3.png; sourceTree = "<group>"; };
+		1E23D9AE1C944BD800A3889D /* card4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card4.png; sourceTree = "<group>"; };
+		1E23D9B31C944BE400A3889D /* invoice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invoice.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +209,11 @@
 				08861A1E1C92CDE800D1E4CE /* Tenants.json */,
 				08861A221C92DA4900D1E4CE /* Transactions.json */,
 				08861A241C92DCFD00D1E4CE /* Requests.json */,
+				1E23D9AB1C944BD800A3889D /* card1.png */,
+				1E23D9AC1C944BD800A3889D /* card2.png */,
+				1E23D9AD1C944BD800A3889D /* card3.png */,
+				1E23D9AE1C944BD800A3889D /* card4.png */,
+				1E23D9B31C944BE400A3889D /* invoice.png */,
 				08861A121C92CD9800D1E4CE /* property1.jpg */,
 				08861A141C92CDA500D1E4CE /* property2.jpg */,
 				08861A201C92D5C600D1E4CE /* property3.jpg */,
@@ -337,14 +352,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				08861A2A1C92F51300D1E4CE /* Transaction.storyboard in Resources */,
+				1E23D9B11C944BD800A3889D /* card3.png in Resources */,
 				088619581C8F7B7400D1E4CE /* Tenant.storyboard in Resources */,
+				1E23D9B41C944BE400A3889D /* invoice.png in Resources */,
 				0886193E1C8F793D00D1E4CE /* LaunchScreen.storyboard in Resources */,
+				1E23D9AF1C944BD800A3889D /* card1.png in Resources */,
+				1E23D9B21C944BD800A3889D /* card4.png in Resources */,
 				08861A171C92CDB500D1E4CE /* tenant1.jpg in Resources */,
 				08861A131C92CD9800D1E4CE /* property1.jpg in Resources */,
 				08861A211C92D5C600D1E4CE /* property3.jpg in Resources */,
 				08861A1F1C92CDE800D1E4CE /* Tenants.json in Resources */,
 				08861A151C92CDA500D1E4CE /* property2.jpg in Resources */,
 				0886195A1C8F7B8A00D1E4CE /* Graphs.storyboard in Resources */,
+				1E23D9B01C944BD800A3889D /* card2.png in Resources */,
 				08861A1B1C92CDC700D1E4CE /* tenant3.png in Resources */,
 				08861A191C92CDBD00D1E4CE /* tenant2.png in Resources */,
 				08861A1D1C92CDD700D1E4CE /* tenant4.png in Resources */,
