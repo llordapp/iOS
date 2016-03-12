@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.translucent = true
         
         notificationsButton.layer.cornerRadius = 8
         notificationsButton.layer.masksToBounds = true

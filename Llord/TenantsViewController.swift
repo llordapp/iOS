@@ -19,6 +19,8 @@ class TenantsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.contentInset = UIEdgeInsetsMake(55,0,0,0);
+        
         configureUI()
         
         loadModel()
