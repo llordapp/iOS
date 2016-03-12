@@ -71,11 +71,20 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
-        let viewControllerObejct = self.storyboard?.instantiateViewControllerWithIdentifier("InvoiceVC") as? InvoiceViewController
-        self.navigationController?.pushViewController(viewControllerObejct!, animated: true)
         
+        //let item = list[indexPath.row]
+        
+        //let image = LlordClient.sharedInstance().getInvoiceImage(item.image)
+        
+        let image = UIImage(named: "tenant2")
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("InvoiceVC") as! InvoiceViewController
+        
+        controller.invoice = image
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+    
     }
+    
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return false

@@ -14,6 +14,9 @@ class InvoiceViewController: UIViewController {
     @IBOutlet weak var chatButton: UIButton!
     @IBOutlet weak var proceedButton: UIButton!
     
+    @IBOutlet var invoiceView: UIImageView!
+    
+    var invoice : UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,8 @@ class InvoiceViewController: UIViewController {
         
         proceedButton.layer.cornerRadius = 4
         proceedButton.layer.masksToBounds = true
+        
+        invoiceView.image = invoice
     }
     
     override func didReceiveMemoryWarning() {

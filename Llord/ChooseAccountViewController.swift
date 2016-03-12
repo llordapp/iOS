@@ -28,5 +28,27 @@ class ChooseAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didPushPay(sender: AnyObject) {
+        
+        var info = [
+            "paymentInfoId":"56e39b141c40f29245a06838",
+            "expiryDate":"0119",
+            "cardNumber":"4263970000005262",
+            "type":"VISA",
+            "cardHolderName":"Joe Smith",
+            "cvn":"123",
+            "cvnPresent":"true"
+        ]
+        
+        LlordClient.sharedInstance().postPayment(info) { (success, errorString) in
+            
+            if (success) {
+                
+                print("success")
+            }
+            
+        }
+        
+    }
     
 }
