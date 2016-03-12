@@ -355,6 +355,7 @@
                     </view>
                     <connections>
                         <outlet property="chatButton" destination="ht6-6K-V6N" id="DRh-nx-nTC"/>
+                        <outlet property="invoiceView" destination="CfR-RW-uzj" id="G0s-b1-obc"/>
                         <outlet property="proceedButton" destination="xif-6m-IKV" id="Ncz-8K-FRi"/>
                     </connections>
                 </viewController>
@@ -558,6 +559,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="didPushPay:" destination="rN5-s6-t7N" eventType="touchUpInside" id="hv0-gP-Ti9"/>
                                     <segue destination="RHM-Me-i6y" kind="show" id="5gy-F3-sDC"/>
                                 </connections>
                             </button>
