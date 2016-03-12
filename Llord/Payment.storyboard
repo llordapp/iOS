@@ -58,7 +58,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="DlF-de-R1Z"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
@@ -67,7 +67,7 @@
                                                                 </mask>
                                                             </variation>
                                                             <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="148" y="18" width="82" height="21"/>
+                                                                <rect key="frame" x="148" y="18" width="216" height="15"/>
                                                                 <mask key="constraints">
                                                                     <include reference="DlF-de-R1Z"/>
                                                                 </mask>
@@ -78,7 +78,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="p77-br-OJk"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
@@ -87,9 +87,33 @@
                                                                 </mask>
                                                             </variation>
                                                             <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="148" y="47" width="136" height="21"/>
+                                                                <rect key="frame" x="148" y="47" width="223" height="24"/>
                                                                 <mask key="constraints">
                                                                     <include reference="p77-br-OJk"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otP-0s-k7u">
+                                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="104" id="3zF-HE-ing"/>
+                                                                <constraint firstAttribute="width" constant="1" id="fVE-mi-rWU"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="3zF-HE-ing"/>
+                                                                    <exclude reference="fVE-mi-rWU"/>
+                                                                </mask>
+                                                            </variation>
+                                                            <variation key="widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="113" y="-9" width="7" height="81"/>
+                                                                <mask key="constraints">
+                                                                    <include reference="3zF-HE-ing"/>
+                                                                    <include reference="fVE-mi-rWU"/>
                                                                 </mask>
                                                             </variation>
                                                         </label>
@@ -99,25 +123,32 @@
                                                         <constraint firstAttribute="height" constant="95" id="399-MS-gKo"/>
                                                         <constraint firstItem="DPp-tL-RgD" firstAttribute="top" secondItem="3qX-4B-7cx" secondAttribute="top" id="67k-GM-76h"/>
                                                         <constraint firstItem="0u6-Rf-Npd" firstAttribute="leading" secondItem="DPp-tL-RgD" secondAttribute="trailing" constant="33" id="8h8-WI-sa5"/>
+                                                        <constraint firstAttribute="bottom" secondItem="otP-0s-k7u" secondAttribute="bottom" constant="10" id="Aao-aq-AQ4"/>
                                                         <constraint firstAttribute="bottom" secondItem="DPp-tL-RgD" secondAttribute="bottom" id="C74-1c-YXw"/>
                                                         <constraint firstItem="0u6-Rf-Npd" firstAttribute="top" secondItem="3qX-4B-7cx" secondAttribute="top" constant="18" id="HIU-rl-KuJ"/>
                                                         <constraint firstItem="lz8-g6-idx" firstAttribute="leading" secondItem="DPp-tL-RgD" secondAttribute="trailing" constant="33" id="Vb6-CN-CUH"/>
+                                                        <constraint firstItem="otP-0s-k7u" firstAttribute="leading" secondItem="3qX-4B-7cx" secondAttribute="leading" constant="113" id="aZt-fh-XrN"/>
                                                         <constraint firstItem="lz8-g6-idx" firstAttribute="top" secondItem="0u6-Rf-Npd" secondAttribute="bottom" constant="8" id="bU0-34-Kyv"/>
                                                         <constraint firstItem="DPp-tL-RgD" firstAttribute="leading" secondItem="3qX-4B-7cx" secondAttribute="leading" constant="23" id="m4P-gH-YjV"/>
+                                                        <constraint firstItem="otP-0s-k7u" firstAttribute="top" secondItem="3qX-4B-7cx" secondAttribute="top" constant="10" id="oCp-PP-6VP"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="subviews">
                                                             <exclude reference="DPp-tL-RgD"/>
                                                             <exclude reference="0u6-Rf-Npd"/>
                                                             <exclude reference="lz8-g6-idx"/>
+                                                            <exclude reference="otP-0s-k7u"/>
                                                         </mask>
                                                         <mask key="constraints">
                                                             <exclude reference="399-MS-gKo"/>
-                                                            <exclude reference="8h8-WI-sa5"/>
-                                                            <exclude reference="HIU-rl-KuJ"/>
                                                             <exclude reference="67k-GM-76h"/>
                                                             <exclude reference="C74-1c-YXw"/>
                                                             <exclude reference="m4P-gH-YjV"/>
+                                                            <exclude reference="Aao-aq-AQ4"/>
+                                                            <exclude reference="aZt-fh-XrN"/>
+                                                            <exclude reference="oCp-PP-6VP"/>
+                                                            <exclude reference="8h8-WI-sa5"/>
+                                                            <exclude reference="HIU-rl-KuJ"/>
                                                             <exclude reference="Vb6-CN-CUH"/>
                                                             <exclude reference="bU0-34-Kyv"/>
                                                         </mask>
@@ -128,14 +159,18 @@
                                                             <include reference="DPp-tL-RgD"/>
                                                             <include reference="0u6-Rf-Npd"/>
                                                             <include reference="lz8-g6-idx"/>
+                                                            <include reference="otP-0s-k7u"/>
                                                         </mask>
                                                         <mask key="constraints">
                                                             <include reference="399-MS-gKo"/>
-                                                            <include reference="8h8-WI-sa5"/>
-                                                            <include reference="HIU-rl-KuJ"/>
                                                             <include reference="67k-GM-76h"/>
                                                             <include reference="C74-1c-YXw"/>
                                                             <include reference="m4P-gH-YjV"/>
+                                                            <include reference="Aao-aq-AQ4"/>
+                                                            <include reference="aZt-fh-XrN"/>
+                                                            <include reference="oCp-PP-6VP"/>
+                                                            <include reference="8h8-WI-sa5"/>
+                                                            <include reference="HIU-rl-KuJ"/>
                                                             <include reference="Vb6-CN-CUH"/>
                                                             <include reference="bU0-34-Kyv"/>
                                                         </mask>
@@ -170,6 +205,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="amountLabel" destination="DPp-tL-RgD" id="xY3-SH-k8i"/>
+                                            <outlet property="border" destination="otP-0s-k7u" id="K20-oC-Pc1"/>
                                             <outlet property="itemLabel" destination="lz8-g6-idx" id="kti-kh-KAI"/>
                                             <outlet property="mainView" destination="dhG-5a-1Ue" id="2G2-VU-5q2"/>
                                             <outlet property="nameLabel" destination="0u6-Rf-Npd" id="15j-N9-eK6"/>

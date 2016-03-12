@@ -14,15 +14,16 @@ import QuartzCore
 class TransactionTableViewCell: UITableViewCell {
     
     
+    @IBOutlet var dateLabel: UILabel!
+
     @IBOutlet var amountLabel: UILabel!
-    
-    @IBOutlet var nameLabel: UILabel!
-    
-    @IBOutlet var referenceLabel: UILabel!
     
     @IBOutlet var mainView: UIView!
     
+    @IBOutlet var referenceLabel: UILabel!
     @IBOutlet var secondaryView: UIView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
     
     func useData( data: Transaction  ) {
         
@@ -34,6 +35,9 @@ class TransactionTableViewCell: UITableViewCell {
         
         nameLabel.textColor = white
         referenceLabel.textColor = white
+        dateLabel.textColor = white
+        addressLabel.textColor = white
+        
         
         if (data.direction == "OUT") {
             amountLabel.textColor = red
@@ -41,8 +45,11 @@ class TransactionTableViewCell: UITableViewCell {
             amountLabel.textColor = green
         }
         
-        amountLabel.text = data.amount
-        nameLabel.text = data.lastName
+        let amount = "£" + data.amount!
+        amountLabel.text = amount
+        
+        let name = data.firstName! + " " + data.lastName!
+        nameLabel.text = name
         referenceLabel.text = data.reference
     
     }

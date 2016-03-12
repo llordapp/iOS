@@ -23,6 +23,7 @@ class PaymentRequestTableViewCell: UITableViewCell {
     
     @IBOutlet var itemLabel: UILabel!
     
+    @IBOutlet var border: UILabel!
     
     
     func useData( data: Request ) {
@@ -33,12 +34,18 @@ class PaymentRequestTableViewCell: UITableViewCell {
         secondaryView.layer.masksToBounds = true;
         secondaryView.backgroundColor = lightGrey
         
+        border.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
+        
         nameLabel.textColor = white
         itemLabel.textColor = white
         amountLabel.textColor = red
         
-        amountLabel.text = data.amount
-        nameLabel.text = data.lastName
+        let amount = "£" + data.amount!
+        amountLabel.text = amount
+        
+        let name = data.firstName! + " " + data.lastName!
+        nameLabel.text = name
+        
         itemLabel.text = data.reference
         
         
