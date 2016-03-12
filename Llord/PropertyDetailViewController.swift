@@ -11,9 +11,18 @@ import UIKit
 
 class PropertyDetailViewController: UIViewController {
     
+    @IBOutlet weak var jaimeButton: UIButton!
+    @IBOutlet weak var quyhnButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        jaimeButton.layer.cornerRadius = 8
+        jaimeButton.layer.masksToBounds = true
+        
+        quyhnButton.layer.cornerRadius = 8
+        quyhnButton.layer.masksToBounds = true
     }
     
     override func didReceiveMemoryWarning() {

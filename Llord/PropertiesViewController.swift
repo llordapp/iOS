@@ -54,8 +54,8 @@ class PropertiesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        //let viewControllerObejct = self.storyboard?.instantiateViewControllerWithIdentifier("InvoiceVC") as? InvoiceViewController
-        //self.navigationController?.pushViewController(viewControllerObejct!, animated: true)
+        let viewControllerObejct = self.storyboard?.instantiateViewControllerWithIdentifier("PropertyDetailVC") as? PropertyDetailViewController
+        self.navigationController?.pushViewController(viewControllerObejct!, animated: true)
         
     }
     
