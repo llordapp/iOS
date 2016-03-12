@@ -14,6 +14,9 @@ class PropertyDetailViewController: UIViewController {
     @IBOutlet weak var jaimeButton: UIButton!
     @IBOutlet weak var quyhnButton: UIButton!
     
+    @IBOutlet weak var jaimeImageView: UIImageView!
+    @IBOutlet weak var jamesImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +33,12 @@ class PropertyDetailViewController: UIViewController {
         view.layer.insertSublayer(gradient, atIndex: 0)
         gradient.startPoint = CGPointZero;
         gradient.endPoint = CGPointMake(1, 1);
+        
+        jaimeImageView.layer.cornerRadius = 18
+        jaimeImageView.layer.masksToBounds = true;
+        
+        jamesImageView.layer.cornerRadius = 18
+        jamesImageView.layer.masksToBounds = true;
     }
     
     override func didReceiveMemoryWarning() {
