@@ -34,7 +34,6 @@ class PaymentRequestTableViewCell: UITableViewCell {
         secondaryView.layer.masksToBounds = true;
         secondaryView.backgroundColor = lightGrey
         
-        border.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
         
         nameLabel.textColor = white
         itemLabel.textColor = white

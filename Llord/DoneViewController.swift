@@ -15,6 +15,7 @@ class DoneViewController: UIViewController {
     @IBOutlet weak var requestsButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     
+    var request : Request?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,13 @@ class DoneViewController: UIViewController {
         requestsButton.layer.masksToBounds = true
         menuButton.layer.cornerRadius = 4
         menuButton.layer.masksToBounds = true
+        
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [darkBlue.CGColor, purple.CGColor]
+        view.layer.insertSublayer(gradient, atIndex: 0)
+        gradient.startPoint = CGPointZero;
+        gradient.endPoint = CGPointMake(1, 1);
        
     }
     

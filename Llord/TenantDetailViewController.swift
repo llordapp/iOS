@@ -14,6 +14,7 @@ class TenantDetailViewController: UIViewController {
     @IBOutlet weak var callButton: UIButton!
     @IBOutlet weak var messageButton: UIButton!
     
+    @IBOutlet weak var saciImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,17 @@ class TenantDetailViewController: UIViewController {
         
         messageButton.layer.cornerRadius = 4
         messageButton.layer.masksToBounds = true
+        
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [darkBlue.CGColor, purple.CGColor]
+        view.layer.insertSublayer(gradient, atIndex: 0)
+        gradient.startPoint = CGPointZero;
+        gradient.endPoint = CGPointMake(1, 1);
+        
+        saciImageView.layer.cornerRadius = 60
+        saciImageView.layer.masksToBounds = true;
+        
     }
     
     override func didReceiveMemoryWarning() {

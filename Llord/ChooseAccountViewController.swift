@@ -30,6 +30,13 @@ class ChooseAccountViewController: UIViewController {
         approveButton.layer.cornerRadius = 4
         approveButton.layer.masksToBounds = true
         
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [darkBlue.CGColor, purple.CGColor]
+        view.layer.insertSublayer(gradient, atIndex: 0)
+        gradient.startPoint = CGPointZero;
+        gradient.endPoint = CGPointMake(1, 1);
+        
         
         pageImages = [UIImage(named:"card1.png")!,
             UIImage(named:"card2.png")!,
@@ -152,6 +159,7 @@ class ChooseAccountViewController: UIViewController {
             if (success) {
                 
                 print("success")
+                
             }
             
         }

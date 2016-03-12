@@ -32,7 +32,14 @@ class ConfirmPaymentViewController: UIViewController {
         
         proceedButton.layer.cornerRadius = 4
         proceedButton.layer.masksToBounds = true
-        
+
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [darkBlue.CGColor, purple.CGColor]
+        view.layer.insertSublayer(gradient, atIndex: 0)
+        gradient.startPoint = CGPointZero;
+        gradient.endPoint = CGPointMake(1, 1);
+
         let name = request!.firstName! + " " + request!.lastName!
         nameLabel.text = name
         
