@@ -796,7 +796,7 @@
                                         <color key="textColor" red="0.0" green="0.7843137255" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="12" width="51" height="24.5"/>
+                                            <rect key="frame" x="-100" y="12" width="151" height="22"/>
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to " textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNo-3O-BKi">
@@ -814,7 +814,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="83" y="15" width="68" height="19"/>
+                                            <rect key="frame" x="83" y="15" width="181" height="18"/>
                                         </variation>
                                     </label>
                                 </subviews>
