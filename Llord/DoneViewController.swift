@@ -38,5 +38,17 @@ class DoneViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goBackToMain(sender: AnyObject) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("MainVC") as! MainViewController
+        
+        let navigationController = UINavigationController(rootViewController: controller)
+        
+        self.presentViewController(navigationController, animated: true, completion: nil)
+        
+        
+    }
+    
     
 }

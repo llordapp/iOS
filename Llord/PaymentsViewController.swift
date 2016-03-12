@@ -18,6 +18,8 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         configureUI()
         
         loadModel()
@@ -32,7 +34,7 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.tableView.contentInset = UIEdgeInsetsMake(55,0,0,0)
+        self.tableView.contentInset = UIEdgeInsetsMake(60,0,0,0)
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,14 +81,15 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        //let item = list[indexPath.row]
+        let item = list[indexPath.row]
         
         //let image = LlordClient.sharedInstance().getInvoiceImage(item.image)
         
-        let image = UIImage(named: "tenant2")
+        let image = UIImage(named: "invoice")
         let controller = self.storyboard?.instantiateViewControllerWithIdentifier("InvoiceVC") as! InvoiceViewController
         
         controller.invoice = image
+        controller.request = item
         
         self.navigationController?.pushViewController(controller, animated: true)
     
@@ -109,6 +112,7 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func configureUI() {
         
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         view.backgroundColor = darkBlue
         tableView.backgroundColor = darkBlue
         
