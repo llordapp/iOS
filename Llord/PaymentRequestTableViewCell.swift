@@ -23,7 +23,6 @@ class PaymentRequestTableViewCell: UITableViewCell {
     
     @IBOutlet var itemLabel: UILabel!
     
-    @IBOutlet var border: UILabel!
     
     
     func useData( data: Request ) {

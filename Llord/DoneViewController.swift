@@ -15,6 +15,10 @@ class DoneViewController: UIViewController {
     @IBOutlet weak var requestsButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     
+    @IBOutlet var amountLabel: UILabel!
+    
+    @IBOutlet var nameLabel: UILabel!
+    
     var request : Request?
     
     override func viewDidLoad() {
@@ -31,6 +35,12 @@ class DoneViewController: UIViewController {
         view.layer.insertSublayer(gradient, atIndex: 0)
         gradient.startPoint = CGPointZero;
         gradient.endPoint = CGPointMake(1, 1);
+        
+        let name = request!.firstName! + " " + request!.lastName!
+        nameLabel.text = name
+        
+        let amount = "£" + request!.amount!
+        amountLabel.text = amount
        
     }
     

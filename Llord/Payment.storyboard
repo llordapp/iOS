@@ -612,7 +612,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="didPushPay:" destination="rN5-s6-t7N" eventType="touchUpInside" id="hv0-gP-Ti9"/>
-                                    <segue destination="RHM-Me-i6y" kind="presentation" id="5gy-F3-sDC"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please select the account you would like to use for this transaction. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fm3-Pw-UlJ">
@@ -699,7 +698,7 @@
         <!--Done View Controller-->
         <scene sceneID="Ysa-WM-cj3">
             <objects>
-                <viewController id="RHM-Me-i6y" customClass="DoneViewController" customModule="Llord" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoneVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RHM-Me-i6y" customClass="DoneViewController" customModule="Llord" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0uJ-1i-ufj"/>
                         <viewControllerLayoutGuide type="bottom" id="a6g-RP-9uK"/>
@@ -797,7 +796,7 @@
                                         <color key="textColor" red="0.0" green="0.7843137255" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="12" width="51" height="24.5"/>
+                                            <rect key="frame" x="-100" y="12" width="151" height="22"/>
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to " textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNo-3O-BKi">
@@ -815,7 +814,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="83" y="15" width="68" height="19"/>
+                                            <rect key="frame" x="83" y="15" width="181" height="18"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -939,7 +938,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="amountLabel" destination="gJo-xp-0uJ" id="quv-2A-a5u"/>
                         <outlet property="menuButton" destination="bYo-Ai-Cmu" id="tCy-Rs-Kl5"/>
+                        <outlet property="nameLabel" destination="7lh-dq-ISK" id="hSf-ZG-m2S"/>
                         <outlet property="requestsButton" destination="yHn-cf-wqX" id="WCq-9X-s2d"/>
                     </connections>
                 </viewController>
