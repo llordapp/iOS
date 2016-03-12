@@ -11,9 +11,19 @@ import UIKit
 
 class TenantDetailViewController: UIViewController {
     
+    @IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var messageButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        callButton.layer.cornerRadius = 4
+        callButton.layer.masksToBounds = true
+        
+        messageButton.layer.cornerRadius = 4
+        messageButton.layer.masksToBounds = true
     }
     
     override func didReceiveMemoryWarning() {
