@@ -10,18 +10,33 @@ import Foundation
 
 class Request {
     
-    var id : String?
-    var amount : String?
     var address : String?
-    var tenantName : String?
-    var item : String?
+    var amount : String?
+    var currency : String?
+    var firstName : String?
+    var id : String?
+    var image : String?
+    var lastName : String?
+    var paidDate : String?
+    var reference : String?
+    var requestDate_Day : String?
+    var requestDate_Month : String?
+    var requestDate_Year : String?
+    
     
     init(dictionary:NSDictionary) {
-        id = dictionary["id"] as? String
-        amount = dictionary["amount"] as? String
         address = dictionary["address"] as? String
-        tenantName = dictionary["tenantName"] as? String
-        item = dictionary["item"] as? String
+        amount = dictionary["amount"] as? String
+        id = dictionary["id"] as? String
+        image = dictionary["image"] as? String
+        lastName = dictionary["lastName"] as? String
+        paidDate = dictionary["paidDate"] as? String
+        reference = dictionary["reference"] as? String
+        currency = dictionary["currency"] as? String
+        firstName = dictionary["firstName"] as? String
+        requestDate_Day = dictionary["requestDate"]!["dayOfMonth"] as? String
+        requestDate_Month = dictionary["requestDate"]!["month"] as? String
+        requestDate_Year = dictionary["requestDate"]!["year"] as? String
     }
     
     class func loadPaymentRequestsFromFile(path: String) -> [Request] {
@@ -46,10 +61,12 @@ class Request {
         }
         
         if let portfolio = json!["requests"] as? [NSDictionary] {
+            dispatch_async(dispatch_get_main_queue(), {
             for dictionary in portfolio {
                 let item = Request(dictionary: dictionary)
                 results.append(item)
             }
+            })
         }
         
         return results

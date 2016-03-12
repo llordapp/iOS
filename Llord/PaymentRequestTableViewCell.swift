@@ -38,8 +38,8 @@ class PaymentRequestTableViewCell: UITableViewCell {
         amountLabel.textColor = red
         
         amountLabel.text = data.amount
-        nameLabel.text = data.tenantName
-        itemLabel.text = data.item
+        nameLabel.text = data.lastName
+        itemLabel.text = data.reference
         
         
     }
