@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -27,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Vn-kb-4tz" id="dhG-5a-1Ue">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="105"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="105.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qX-4B-7cx">
@@ -46,8 +46,7 @@
                                                                     <exclude reference="TBW-sT-c1H"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="35" y="0.0" width="80" height="79"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="TBW-sT-c1H"/>
                                                                 </mask>
@@ -66,8 +65,7 @@
                                                                     <exclude reference="DlF-de-R1Z"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="148" y="18" width="82" height="21"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="DlF-de-R1Z"/>
                                                                 </mask>
@@ -79,15 +77,14 @@
                                                                 <constraint firstAttribute="height" constant="21" id="p77-br-OJk"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
                                                                     <exclude reference="p77-br-OJk"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="148" y="47" width="136" height="21"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="p77-br-OJk"/>
                                                                 </mask>
@@ -123,7 +120,7 @@
                                                         </mask>
                                                     </variation>
                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="10" width="384" height="79"/>
+                                                        <rect key="frame" x="20" y="10" width="201" height="95"/>
                                                         <mask key="subviews">
                                                             <include reference="DPp-tL-RgD"/>
                                                             <include reference="0u6-Rf-Npd"/>
@@ -195,10 +192,10 @@
                                 <exclude reference="g1e-1v-ael"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="tkv-X7-Fgi"/>
                                 <exclude reference="4pw-MB-T2x"/>
                                 <exclude reference="nwx-jF-whc"/>
                                 <exclude reference="wHC-ES-MPJ"/>
-                                <exclude reference="tkv-X7-Fgi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -206,10 +203,10 @@
                                 <include reference="g1e-1v-ael"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="tkv-X7-Fgi"/>
                                 <include reference="4pw-MB-T2x"/>
                                 <include reference="nwx-jF-whc"/>
                                 <include reference="wHC-ES-MPJ"/>
-                                <include reference="tkv-X7-Fgi"/>
                             </mask>
                         </variation>
                     </view>
