@@ -34,8 +34,7 @@
                                         <exclude reference="mj5-AL-Sno"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="25" y="85" width="130" height="132"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="dMu-Lw-iIp"/>
                                         <include reference="mj5-AL-Sno"/>
@@ -60,8 +59,7 @@
                                         <exclude reference="GC9-AF-62m"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="240" y="85" width="130" height="132"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="8EN-sC-Pf3"/>
                                         <include reference="GC9-AF-62m"/>
@@ -86,8 +84,7 @@
                                         <exclude reference="F27-7N-6D0"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="25" y="234" width="130" height="132"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="8ja-cl-Ha9"/>
                                         <include reference="F27-7N-6D0"/>
@@ -112,8 +109,7 @@
                                         <exclude reference="jf5-Z9-IH9"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="240" y="234" width="130" height="132"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="CMo-QW-BZ3"/>
                                         <include reference="jf5-Z9-IH9"/>
@@ -138,8 +134,7 @@
                                         <exclude reference="w5Y-e1-163"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="25" y="382" width="130" height="132"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="aLM-6w-1tP"/>
                                         <include reference="w5Y-e1-163"/>
@@ -164,8 +159,7 @@
                                         <exclude reference="uvH-Yr-TNV"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="240" y="382" width="130" height="132"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="AcN-wG-wR8"/>
                                         <include reference="uvH-Yr-TNV"/>
@@ -188,8 +182,7 @@
                                         <exclude reference="cKt-s3-kKL"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="350" y="28" width="20" height="21"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="AmR-it-Owo"/>
                                         <include reference="cKt-s3-kKL"/>
@@ -211,8 +204,7 @@
                                         <exclude reference="zyo-6l-EbQ"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="49" y="189" width="82" height="21"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="1GN-wr-xUA"/>
                                         <include reference="zyo-6l-EbQ"/>
@@ -234,8 +226,7 @@
                                         <exclude reference="wlU-o2-8a9"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="273" y="189" width="64" height="21"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="isl-I5-hBy"/>
                                         <include reference="wlU-o2-8a9"/>
@@ -257,8 +248,7 @@
                                         <exclude reference="uCS-qY-lxI"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="56" y="337" width="68" height="21"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="Bef-j3-fdD"/>
                                         <include reference="uCS-qY-lxI"/>
@@ -280,8 +270,7 @@
                                         <exclude reference="o44-cj-9Jv"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="279" y="337" width="52" height="21"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="1pK-vY-icQ"/>
                                         <include reference="o44-cj-9Jv"/>
@@ -312,8 +301,7 @@
                                         <exclude reference="zSP-e9-NYu"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="273" y="487" width="63" height="21"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="r9K-10-zUW"/>
                                         <include reference="zSP-e9-NYu"/>
@@ -452,7 +440,6 @@
         <!--Navigation Controller-->
         <scene sceneID="tNJ-aJ-4h6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nMi-Ig-4fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SAa-Bq-Mc0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aFA-0V-zPl">
@@ -464,6 +451,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZcQ-Ub-fXV"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMi-Ig-4fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="387" y="349"/>
         </scene>

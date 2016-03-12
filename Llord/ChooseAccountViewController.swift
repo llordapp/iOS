@@ -11,9 +11,16 @@ import UIKit
 
 class ChooseAccountViewController: UIViewController {
     
+    @IBOutlet weak var approveButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        approveButton.layer.cornerRadius = 4
+        approveButton.layer.masksToBounds = true
+        
     }
     
     override func didReceiveMemoryWarning() {
