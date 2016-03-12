@@ -12,16 +12,33 @@ import QuartzCore
 
 class PropertyTableViewCell: UITableViewCell {
     
+
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var secondaryView: UIView!
     @IBOutlet var propertyImageView: UIImageView!
-    @IBOutlet var rentLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
+    @IBOutlet var ContractLabel: UILabel!
+    @IBOutlet var expiryLabel: UILabel!
+    @IBOutlet var numberOfTenantsLabel: UILabel!
     
-    func useProperty( prop: Property ) {
+    func useData( data: Property ) {
         
-        let image = UIImage(named: prop.imageName!)
+        mainView.backgroundColor = darkBlue
+        
+        secondaryView.layer.cornerRadius = 8;
+        secondaryView.layer.masksToBounds = true;
+        secondaryView.backgroundColor = lightGrey
+        
+        addressLabel.textColor = white
+        ContractLabel.textColor = white
+        expiryLabel.textColor = white
+        numberOfTenantsLabel.textColor = white
+        
+        
+        let image = UIImage(named: data.imageName!)
         propertyImageView.image = image
-        rentLabel.text = prop.rent
-        addressLabel.text = prop.address
+        addressLabel.text = data.address
+        expiryLabel.text = data.contractEnd
     }
     
 }

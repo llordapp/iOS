@@ -2,7 +2,7 @@
 	"portfolio" : [
 					{
 						"id" : "1",
-						"imageName" : "property1",
+						"imageName" : "property1.jpg",
 						"address" : "18 Hackathon Street",
 						"rent" : "860 pm",
                         "contractEnd" : "1 March 2017"
@@ -10,14 +10,14 @@
 					},
 					{
 						"id" : "2",
-						"imageName" : "property2",
+						"imageName" : "property2.jpg",
 						"address" : "132 Fintech Road",
 						"rent" : "1200 pm",
                         "contractEnd" : "1 March 2017"
 					},
                     {
                         "id" : "3",
-                        "imageName" : "property3",
+                        "imageName" : "property3.jpg",
                         "address" : "51  Road",
                         "rent" : "700 pm",
                         "contractEnd" : "1 March 2017"

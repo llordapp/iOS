@@ -60,6 +60,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func didPushProperties(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Property", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("PropertiesVC") as! PropertiesViewController
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+
     }
  
     @IBAction func didPushTenants(sender: AnyObject) {

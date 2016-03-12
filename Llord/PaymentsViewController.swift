@@ -20,7 +20,6 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
         
         configureUI()
         
-        
         loadModel()
         
     }
