@@ -11,9 +11,19 @@ import UIKit
 
 class DoneViewController: UIViewController {
     
+    
+    @IBOutlet weak var requestsButton: UIButton!
+    @IBOutlet weak var menuButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        requestsButton.layer.cornerRadius = 4
+        requestsButton.layer.masksToBounds = true
+        menuButton.layer.cornerRadius = 4
+        menuButton.layer.masksToBounds = true
+       
     }
     
     override func didReceiveMemoryWarning() {

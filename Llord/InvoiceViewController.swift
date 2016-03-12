@@ -11,9 +11,19 @@ import UIKit
 
 class InvoiceViewController: UIViewController {
     
+    @IBOutlet weak var chatButton: UIButton!
+    @IBOutlet weak var proceedButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        chatButton.layer.cornerRadius = 4
+        chatButton.layer.masksToBounds = true
+        
+        proceedButton.layer.cornerRadius = 4
+        proceedButton.layer.masksToBounds = true
     }
     
     override func didReceiveMemoryWarning() {
