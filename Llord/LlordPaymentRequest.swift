@@ -26,7 +26,9 @@ class Request {
     
     init(dictionary:NSDictionary) {
         address = dictionary["address"] as? String
-        amount = dictionary["amount"] as? String
+        let intAmount = dictionary["amount"] as? Float
+        let floatAmount = intAmount!/100
+        amount = NSString(format: "%.2f", floatAmount) as String
         id = dictionary["id"] as? String
         image = dictionary["image"] as? String
         lastName = dictionary["lastName"] as? String

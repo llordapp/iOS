@@ -24,6 +24,10 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.contentInset = UIEdgeInsetsMake(55,0,0,0)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,12 +65,13 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCellWithIdentifier("RequestCell", forIndexPath: indexPath) as! PaymentRequestTableViewCell
         let item = list[indexPath.row]
         cell.useData(item)
+        cell.selectionStyle = .None
         return cell
         
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+
         let viewControllerObejct = self.storyboard?.instantiateViewControllerWithIdentifier("InvoiceVC") as? InvoiceViewController
         self.navigationController?.pushViewController(viewControllerObejct!, animated: true)
         
@@ -76,7 +81,18 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
         return false
     }
     
+    func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+        let cell  = tableView.cellForRowAtIndexPath(indexPath) as! PaymentRequestTableViewCell
+        cell.secondaryView.backgroundColor = lightGrey
+    }
+    
+    func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
+        let cell  = tableView.cellForRowAtIndexPath(indexPath) as! PaymentRequestTableViewCell
+        cell.secondaryView.backgroundColor = lightGrey
+    }
+    
     func configureUI() {
+        
         view.backgroundColor = darkBlue
         tableView.backgroundColor = darkBlue
         
