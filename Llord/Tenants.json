@@ -2,7 +2,7 @@
     "tenants" : [
                 {
                 "id" : "1",
-                "imageName" : "tenant1",
+                "imageName" : "tenant1.jpg",
                 "address" : "18 UI-UX Street, SW3 2KP",
                 "tenantName" : "Saci Sebo"
                 },

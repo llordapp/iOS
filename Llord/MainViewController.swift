@@ -68,6 +68,11 @@ class MainViewController: UIViewController {
     }
  
     @IBAction func didPushTenants(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Tenant", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("TenantsVC") as! TenantsViewController
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+        
     }
     
     @IBAction func didPushTransaction(sender: AnyObject) {

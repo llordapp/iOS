@@ -11,9 +11,18 @@ import UIKit
 
 class TenantsViewController: UIViewController {
     
+    
+    @IBOutlet var tableView: UITableView!
+    
+    var list : [Tenant] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        configureUI()
+        
+        loadModel()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -21,5 +30,44 @@ class TenantsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadModel() {
+        let path = NSBundle.mainBundle().pathForResource("Tenants", ofType: "json")
+        list = Tenant.loadTenantsFromFile(path!)
+    }
+    
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("TenantCell", forIndexPath: indexPath) as! TenantTableViewCell
+        let item = list[indexPath.row]
+        cell.useData(item)
+        return cell
+        
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        //let viewControllerObejct = self.storyboard?.instantiateViewControllerWithIdentifier("InvoiceVC") as? InvoiceViewController
+        //self.navigationController?.pushViewController(viewControllerObejct!, animated: true)
+        
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return false
+    }
+    
+    func configureUI() {
+        view.backgroundColor = darkBlue
+        tableView.backgroundColor = darkBlue
+        
+    }
+
     
 }
