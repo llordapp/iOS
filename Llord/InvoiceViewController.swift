@@ -16,6 +16,7 @@ class InvoiceViewController: UIViewController {
     
     @IBOutlet var invoiceView: UIImageView!
     
+    var request : Request?
     var invoice : UIImage?
     
     override func viewDidLoad() {
@@ -34,6 +35,16 @@ class InvoiceViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    
+    @IBAction func didPushProceed(sender: AnyObject) {
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ConfirmVC") as! ConfirmPaymentViewController
+        controller.request = self.request
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+        
+        
     }
     
     

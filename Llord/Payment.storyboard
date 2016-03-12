@@ -303,7 +303,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="PRD-Y0-PPh" kind="show" id="ZI8-fC-fmo"/>
+                                    <action selector="didPushProceed:" destination="OeU-MO-Afh" eventType="touchUpInside" id="ap2-nk-LS2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -366,7 +366,7 @@
         <!--Confirm Payment View Controller-->
         <scene sceneID="6of-Ht-wLC">
             <objects>
-                <viewController id="PRD-Y0-PPh" customClass="ConfirmPaymentViewController" customModule="Llord" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PRD-Y0-PPh" customClass="ConfirmPaymentViewController" customModule="Llord" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WfQ-Ow-oiV"/>
                         <viewControllerLayoutGuide type="bottom" id="i1A-N8-z0W"/>
@@ -384,7 +384,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="8" y="61" width="109" height="21"/>
+                                            <rect key="frame" x="8" y="61" width="260" height="21"/>
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barclays" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqR-nW-RzS">
@@ -393,7 +393,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="8" y="95" width="109" height="21"/>
+                                            <rect key="frame" x="8" y="95" width="260" height="21"/>
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ref: Washing Machine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWD-9h-gDK">
@@ -405,7 +405,7 @@
                                             <rect key="frame" x="8" y="129" width="188" height="21"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-up-DVJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tom Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-up-DVJ">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -479,7 +479,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="rN5-s6-t7N" kind="show" id="Lks-ue-r8p"/>
+                                    <action selector="didPushConfirm:" destination="PRD-Y0-PPh" eventType="touchUpInside" id="jkV-zN-2mZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -516,7 +516,12 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="accountNumberLabel" destination="tVk-SO-XWT" id="2cs-xf-STe"/>
+                        <outlet property="amountLabel" destination="m8C-82-vI1" id="UiE-aN-US8"/>
+                        <outlet property="infoLabel" destination="KqR-nW-RzS" id="Adj-kM-bUa"/>
+                        <outlet property="nameLabel" destination="BxB-up-DVJ" id="zsl-Nm-pxF"/>
                         <outlet property="proceedButton" destination="u7E-hr-XNo" id="iZB-V6-mHP"/>
+                        <outlet property="refLabel" destination="LWD-9h-gDK" id="QVp-qC-NgH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubZ-yc-Arb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -526,7 +531,7 @@
         <!--Choose Account View Controller-->
         <scene sceneID="0ZP-gc-15k">
             <objects>
-                <viewController id="rN5-s6-t7N" customClass="ChooseAccountViewController" customModule="Llord" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChooseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rN5-s6-t7N" customClass="ChooseAccountViewController" customModule="Llord" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hn3-te-21v"/>
                         <viewControllerLayoutGuide type="bottom" id="Z7Z-fJ-3vF"/>
@@ -560,7 +565,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="didPushPay:" destination="rN5-s6-t7N" eventType="touchUpInside" id="hv0-gP-Ti9"/>
-                                    <segue destination="RHM-Me-i6y" kind="show" id="5gy-F3-sDC"/>
+                                    <segue destination="RHM-Me-i6y" kind="presentation" id="5gy-F3-sDC"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please select the account you would like to use for this transaction. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fm3-Pw-UlJ">
@@ -585,10 +590,22 @@
                                     </mask>
                                 </variation>
                             </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKr-I2-3eb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="42" y="230" width="332" height="184"/>
+                                </variation>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-0z-be3">
+                                <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="125" y="415" width="39" height="37"/>
+                                </variation>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.14901960784313725" green="0.11764705882352941" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="fm3-Pw-UlJ" firstAttribute="top" secondItem="Hn3-te-21v" secondAttribute="bottom" constant="58" id="0fo-CT-Pts"/>
+                            <constraint firstItem="fm3-Pw-UlJ" firstAttribute="top" secondItem="Hn3-te-21v" secondAttribute="bottom" constant="40" id="0fo-CT-Pts"/>
                             <constraint firstItem="fm3-Pw-UlJ" firstAttribute="centerX" secondItem="w3t-ee-cOn" secondAttribute="centerX" id="K16-bQ-hAI"/>
                             <constraint firstItem="Ao7-mQ-2EB" firstAttribute="centerX" secondItem="w3t-ee-cOn" secondAttribute="centerX" id="N0V-0k-he6"/>
                             <constraint firstItem="Ao7-mQ-2EB" firstAttribute="top" secondItem="Hn3-te-21v" secondAttribute="bottom" constant="434" id="bfv-NT-ZCY"/>
@@ -597,29 +614,35 @@
                             <mask key="subviews">
                                 <exclude reference="Ao7-mQ-2EB"/>
                                 <exclude reference="fm3-Pw-UlJ"/>
+                                <exclude reference="XKr-I2-3eb"/>
+                                <exclude reference="Pfz-0z-be3"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="N0V-0k-he6"/>
-                                <exclude reference="bfv-NT-ZCY"/>
                                 <exclude reference="0fo-CT-Pts"/>
                                 <exclude reference="K16-bQ-hAI"/>
+                                <exclude reference="N0V-0k-he6"/>
+                                <exclude reference="bfv-NT-ZCY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Ao7-mQ-2EB"/>
                                 <include reference="fm3-Pw-UlJ"/>
+                                <include reference="XKr-I2-3eb"/>
+                                <include reference="Pfz-0z-be3"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="N0V-0k-he6"/>
-                                <include reference="bfv-NT-ZCY"/>
                                 <include reference="0fo-CT-Pts"/>
                                 <include reference="K16-bQ-hAI"/>
+                                <include reference="N0V-0k-he6"/>
+                                <include reference="bfv-NT-ZCY"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="approveButton" destination="Ao7-mQ-2EB" id="FQ5-BX-GCm"/>
+                        <outlet property="pageControl" destination="Pfz-0z-be3" id="qbP-Cs-doU"/>
+                        <outlet property="scrollView" destination="XKr-I2-3eb" id="4UO-O0-gbx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5I-AU-1YI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -689,6 +712,9 @@
                                         <include reference="VJQ-VZ-lfv"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="goBackToMain:" destination="RHM-Me-i6y" eventType="touchUpInside" id="27x-nU-1Hb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your payment is on its way!" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgG-1w-dJi">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>

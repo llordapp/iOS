@@ -23,6 +23,15 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationController?.navigationBar.translucent = true
         
+        let btn = UIButton()
+        btn.setImage(UIImage(named: "profile"), forState: .Normal)
+        btn.frame = CGRectMake(0, 0, 30, 30)
+        //btn.addTarget(self, action: Selector("action2:"), forControlEvents: .TouchUpInside)
+        let item = UIBarButtonItem()
+        item.customView = btn
+        
+        self.navigationItem.rightBarButtonItem = item
+        
         notificationsButton.layer.cornerRadius = 8
         notificationsButton.layer.masksToBounds = true
         
@@ -77,6 +86,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func didPushTransaction(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Transaction", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("TransactionVC") as! TransactionViewController
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+        
     }
     
     @IBAction func didPushOverview(sender: AnyObject) {

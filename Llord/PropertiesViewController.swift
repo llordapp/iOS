@@ -19,7 +19,8 @@ class PropertiesViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.contentInset = UIEdgeInsetsMake(55,0,0,0);
+        self.tableView.contentInset = UIEdgeInsetsMake(60,0,0,0)
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         self.configureUIForProperties()
         
@@ -70,6 +71,17 @@ class PropertiesViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.backgroundColor = darkBlue
         
     }
+    
+    func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+        let cell  = tableView.cellForRowAtIndexPath(indexPath) as! PropertyTableViewCell
+        cell.secondaryView.backgroundColor = lightGrey
+    }
+    
+    func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
+        let cell  = tableView.cellForRowAtIndexPath(indexPath) as! PropertyTableViewCell
+        cell.secondaryView.backgroundColor = lightGrey
+    }
+
     
     
 }
