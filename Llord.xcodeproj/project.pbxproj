@@ -324,7 +324,7 @@
 				TargetAttributes = {
 					0886192F1C8F793D00D1E4CE = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = E8KJSP4MZ4;
+						DevelopmentTeam = R94F524VGS;
 					};
 				};
 			};
@@ -524,7 +524,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Llord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sacisebo.Llord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Llord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -538,7 +538,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Llord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sacisebo.Llord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Llord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

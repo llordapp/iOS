@@ -26,9 +26,9 @@ class Request {
     
     init(dictionary:NSDictionary) {
         address = dictionary["address"] as? String
-        let intAmount = dictionary["amount"] as? Float
-        let floatAmount = intAmount!/100
-        amount = NSString(format: "%.2f", floatAmount) as String
+        amount = dictionary["amount"] as? String
+        //let floatAmount = intAmount!/100
+        //amount = NSString(format: "%.2f", floatAmount) as String
         id = dictionary["id"] as? String
         image = dictionary["image"] as? String
         lastName = dictionary["lastName"] as? String
@@ -36,9 +36,9 @@ class Request {
         reference = dictionary["reference"] as? String
         currency = dictionary["currency"] as? String
         firstName = dictionary["firstName"] as? String
-        requestDate_Day = dictionary["requestDate"]!["dayOfMonth"] as? String
-        requestDate_Month = dictionary["requestDate"]!["month"] as? String
-        requestDate_Year = dictionary["requestDate"]!["year"] as? String
+        //requestDate_Day = dictionary["requestDate"]!["dayOfMonth"] as? String
+        //requestDate_Month = dictionary["requestDate"]!["month"] as? String
+        //requestDate_Year = dictionary["requestDate"]!["year"] as? String
     }
     
     class func loadPaymentRequestsFromFile(path: String) -> [Request] {
@@ -63,12 +63,11 @@ class Request {
         }
         
         if let portfolio = json!["requests"] as? [NSDictionary] {
-            dispatch_async(dispatch_get_main_queue(), {
+
             for dictionary in portfolio {
                 let item = Request(dictionary: dictionary)
                 results.append(item)
             }
-            })
         }
         
         return results

@@ -154,22 +154,11 @@ class ChooseAccountViewController: UIViewController {
             "cvnPresent":"true"
         ]
         
-        LlordClient.sharedInstance().postPayment(info) { (success, errorString) in
-            
-            if (success) {
-                dispatch_async(dispatch_get_main_queue(), {
-                    print("success")
+            let controller = self.storyboard?.instantiateViewControllerWithIdentifier("DoneVC") as! DoneViewController
+            controller.request = self.request
                     
-                    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("DoneVC") as! DoneViewController
-                    controller.request = self.request
-                    
-                    self.navigationController?.pushViewController(controller, animated: true)
-                    
-                })
-                
-            }
-            
-        }
+            self.navigationController?.pushViewController(controller, animated: true)
+        
         
     }
     

@@ -24,6 +24,8 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
         
         loadModel()
         
+        tableView.reloadData()
+        
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = view.bounds
         gradient.colors = [darkBlue.CGColor, purple.CGColor]
@@ -43,22 +45,9 @@ class PaymentsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func loadModel() {
-        //let path = NSBundle.mainBundle().pathForResource("Requests", ofType: "json")
-        LlordClient.sharedInstance().getPaymentRequests() { (success, error, data) in
-            if (success) {
-                print(data)
-                dispatch_async(dispatch_get_main_queue(), {
-                    for item in data! {
-                        let object = Request(dictionary: item)
-                        self.list.append(object)
-                    }
-                    self.tableView.reloadData()
-                })
-            }
-            
-        }
+        let path = NSBundle.mainBundle().pathForResource("Requests", ofType: "json")
         
-        //list = Request.loadPaymentRequestsFromFile(path!)
+        list = Request.loadPaymentRequestsFromFile(path!)
     }
     
     

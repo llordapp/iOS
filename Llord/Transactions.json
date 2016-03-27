@@ -3,73 +3,81 @@
                       {
                       "id" : "1",
                       "amount" : "980",
-                      "type" : "incoming",
-                      "subject" : "Rent Payment"
+                      "direction" : "OUT",
+                      "reference" : "Rent Payment",
                       "property" : "18 UI-UX Street",
-                      "tenantName" : "Saci Sebo",
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
                       "date" : "01 March 2016"
                       },
                       {
                       "id" : "2",
-                      "amount" : "45",
-                      "type" : "outgoing",
-                      "subject" : "Plumber"
-                      "property" : "121 Fintech Street",
-                      "tenantName" : "Jaime Clinton",
-                      "date" : "01 February 2016"
+                      "amount" : "2100",
+                      "direction" : "IN",
+                      "reference" : "Rent Payment",
+                      "property" : "18 UI-UX Street",
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
+                      "date" : "01 March 2016"
                       },
                       {
                       "id" : "3",
-                      "amount" : "1080",
-                      "type" : "incoming",
-                      "subject" : "Rent Payment"
+                      "amount" : "11980",
+                      "direction" : "IN",
+                      "reference" : "Rent Payment",
                       "property" : "18 UI-UX Street",
-                      "tenantName" : "Quynh Tran",
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
                       "date" : "01 March 2016"
                       },
                       {
                       "id" : "4",
                       "amount" : "980",
-                      "type" : "incoming",
-                      "subject" : "Rent Payment"
+                      "direction" : "OUT",
+                      "reference" : "Rent Payment",
                       "property" : "18 UI-UX Street",
-                      "tenantName" : "Saci Sebo",
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
                       "date" : "01 March 2016"
-                      }
+                      },
                       {
                       "id" : "5",
-                      "amount" : "320",
-                      "type" : "outgoing",
-                      "subject" : "Washing Machine"
+                      "amount" : "2330",
+                      "direction" : "IN",
+                      "reference" : "Rent Payment",
                       "property" : "18 UI-UX Street",
-                      "tenantName" : "Quynh Tran",
-                      "date" : "01 January 2016"
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
+                      "date" : "01 March 2016"
                       },
                       {
                       "id" : "6",
-                      "amount" : "1080",
-                      "type" : "incoming",
-                      "subject" : "Rent Payment"
+                      "amount" : "100",
+                      "direction" : "IN",
+                      "reference" : "Rent Payment",
                       "property" : "18 UI-UX Street",
-                      "tenantName" : "James Butler",
-                      "date" : "01 January 2016"
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
+                      "date" : "01 March 2016"
                       },
                       {
                       "id" : "7",
-                      "amount" : "780",
-                      "type" : "outgoing",
-                      "subject" : "Renovation"
+                      "amount" : "11980",
+                      "direction" : "OUT",
+                      "reference" : "Rent Payment",
                       "property" : "18 UI-UX Street",
-                      "tenantName" : "Saci Sebo",
-                      "date" : "01 January 2016"
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
+                      "date" : "01 March 2016"
                       },
                       {
                       "id" : "8",
-                      "amount" : "1080",
-                      "type" : "incoming",
-                      "subject" : "Rent Payment"
+                      "amount" : "980",
+                      "direction" : "OUT",
+                      "reference" : "Rent Payment",
                       "property" : "18 UI-UX Street",
-                      "tenantName" : "Quynh Tran",
+                      "lastName" : "Sebo",
+                      "firstName" : "Saci",
                       "date" : "01 March 2016"
                       }
     

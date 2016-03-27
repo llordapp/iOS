@@ -33,6 +33,8 @@ class TransactionViewController: UIViewController, UITableViewDelegate, UITableV
         self.tableView.contentInset = UIEdgeInsetsMake(60,0,0,0)
         
         loadModel()
+        
+        self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,22 +43,8 @@ class TransactionViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func loadModel() {
-        //let path = NSBundle.mainBundle().pathForResource("Requests", ofType: "json")
-        LlordClient.sharedInstance().getTransactions() { (success, error, data) in
-            if (success) {
-                print(data)
-                dispatch_async(dispatch_get_main_queue(), {
-                    for item in data! {
-                        let object = Transaction(dictionary: item)
-                        self.list.append(object)
-                    }
-                    self.tableView.reloadData()
-                })
-            }
-            
-        }
-        
-        //list = Request.loadPaymentRequestsFromFile(path!)
+        let path = NSBundle.mainBundle().pathForResource("Transactions", ofType: "json")
+        list = Transaction.loadTransactionsFromFile(path!)
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -79,7 +67,6 @@ class TransactionViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
-    
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return false
